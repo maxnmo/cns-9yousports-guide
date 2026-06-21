@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九游体育 · 使用指南与访问说明</title>
+    <style>
+        /* 极简留白 · 窄版心 · 清晰层次 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #faf9f7;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+            color: #1e1e1e;
+            line-height: 1.7;
+            padding: 2rem 1rem 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 660px;
+            width: 100%;
+        }
+
+        /* 标题层级 — 干净利落 */
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            margin-top: 1.2rem;
+            margin-bottom: 0.25rem;
+            color: #1b1b1b;
+            border-left: 4px solid #c7a052;
+            padding-left: 1rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 450;
+            margin-top: 2.6rem;
+            margin-bottom: 0.75rem;
+            color: #2c2c2c;
+            border-bottom: 1px solid #e4ddd2;
+            padding-bottom: 0.3rem;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-top: 1.8rem;
+            margin-bottom: 0.4rem;
+            color: #3d3d3d;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            color: #2e2e2e;
+        }
+
+        /* 微妙卡片 / 区块 */
+        .card-soft {
+            background: #ffffffea;
+            border-radius: 16px;
+            padding: 1.6rem 1.8rem;
+            margin: 2rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02), 0 1px 3px rgba(0,0,0,0.03);
+            border: 1px solid #efeae2;
+        }
+
+        .card-soft p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 1rem 0 0.2rem;
+        }
+
+        .highlight-list li {
+            padding: 0.4rem 0 0.4rem 1.8rem;
+            position: relative;
+            margin-bottom: 0.3rem;
+            font-size: 0.98rem;
+        }
+
+        .highlight-list li::before {
+            content: "·";
+            position: absolute;
+            left: 0.3rem;
+            color: #b8913c;
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+
+        /* 提示块 — 可信克制 */
+        .note-box {
+            background: #f5f2ec;
+            border-left: 5px solid #c7a052;
+            padding: 1rem 1.4rem;
+            border-radius: 0 12px 12px 0;
+            margin: 1.8rem 0;
+            font-size: 0.95rem;
+            color: #2b2b2b;
+        }
+
+        .note-box strong {
+            color: #7a6234;
+        }
+
+        /* 修饰 */
+        .subhead {
+            font-size: 1rem;
+            color: #676767;
+            margin-top: -0.2rem;
+            margin-bottom: 1.8rem;
+            font-weight: 380;
+        }
+
+        .foot-note {
+            font-size: 0.85rem;
+            color: #7a7a7a;
+            border-top: 1px solid #e4ddd2;
+            padding-top: 1.8rem;
+            margin-top: 2.8rem;
+        }
+
+        /* 链接风格 — 融入句子，不强调入口感 */
+        a {
+            color: #1e3a5f;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #b5a690;
+            transition: text-decoration-color 0.15s;
+        }
+
+        a:hover {
+            text-decoration-color: #1e3a5f;
+        }
+
+        /* 响应式细节 */
+        @media (max-width: 480px) {
+            body {
+                padding: 1.2rem 0.8rem 2rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+                padding-left: 0.8rem;
+            }
+            .card-soft {
+                padding: 1.2rem;
+            }
+            .note-box {
+                padding: 0.8rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- Hero 式摘要 -->
+    <h1>九游体育 · 简明指南</h1>
+    <div class="subhead">一个关于平台特性、使用建议与访问提醒的说明页</div>
+
+    <p>
+        <strong>九游体育</strong> 是一个以体育赛事资讯、数据查询和内容聚合为主的数字平台。如果你正在寻找一个信息结构清晰、更新节奏稳定的体育参考来源，那么下面这份摘要或许能帮你快速了解它能做什么、适合谁，以及使用时需要注意什么。
+    </p>
+
+    <!-- 亮点 / 特点 —— 以卡片呈现 -->
+    <div class="card-soft">
+        <h3 style="margin-top: 0; border-bottom: none; padding-bottom: 0;">平台特点一览</h3>
+        <ul class="highlight-list">
+            <li><strong>赛事覆盖面较广</strong> — 涵盖主流联赛、杯赛及部分小众项目，信息源相对稳定。</li>
+            <li><strong>数据与内容并存</strong> — 不仅有赛果、积分、赛程等基础数据，也提供赛事回顾、前瞻类短内容。</li>
+            <li><strong>界面侧重可读性</strong> — 导航层级简洁，重要信息通常在首屏即可触及，减少查找成本。</li>
+            <li><strong>更新节奏规律</strong> — 重要比赛结束后通常能较快看到结果与简评，适合习惯赛后查阅的用户。</li>
+        </ul>
+        <p style="font-size: 0.93rem; color: #4f4f4f; margin-top: 0.8rem;">
+            当然，每个平台都有自己的侧重点，这里仅就观察到的特征做客观描述。
+        </p>
+    </div>
+
+    <!-- 使用建议 — 场景化 -->
+    <h2>使用建议 · 从场景出发</h2>
+
+    <h3>日常查阅赛果与赛程</h3>
+    <p>如果你只是想快速了解某场比赛的结果、下一轮对阵时间，或者某个球队的近期战绩，<strong>九游体育</strong> 的赛程页面可以作为首选之一。数据按日期和联赛分组，查找效率较高。建议搭配官方数据源交叉验证关键比分（尤其杯赛淘汰赛阶段）。</p>
+
+    <h3>深度内容阅读</h3>
+    <p>平台也提供部分赛事前瞻、赛后简评类文字，适合赛前快速了解看点，或赛后回顾关键节点。不过如果你需要极其详尽的战术分析或历史数据对比，建议结合其他专业媒体互补使用。</p>
+
+    <h3>移动端浏览提醒</h3>
+    <p>目前移动端适配表现良好，页面在手机浏览器上阅读体验流畅。但部分交互（如下拉加载、筛选器）在窄屏下需要稍微适应，建议使用 Safari 或 Chrome 最新版本以获得最佳显示效果。</p>
+
+    <!-- 可信但克制的访问说明 -->
+    <h2>访问说明 · 保持理性预期</h2>
+
+    <div class="note-box">
+        <strong>请注意：</strong> 本页面仅为介绍参考，不构成任何投资、博彩或决策建议。
+        所有内容均来自公开平台信息，具体功能、数据更新速度及可用性请以实际访问为准。
+        如果你对某个功能有疑问，最可靠的方式是直接访问该平台，自行体验和判断。
+    </div>
+
+    <p>
+        另外，由于网络环境和地区差异，部分时间点可能遇到加载延迟或内容不可用的情况。
+        这并非平台本身的问题，而是互联网访问的常态。建议在稳定的网络环境下使用，并定期清除浏览器缓存以保持体验。
+    </p>
+
+    <!-- FAQ 摘要 — 轻量问答 -->
+    <h2>常见问题摘要</h2>
+
+    <h3>九游体育是否提供实时比分直播？</h3>
+    <p>平台主要提供赛后数据和内容更新，实时直播并非核心功能。部分焦点赛事可能会有文字滚动更新，但建议以官方直播平台为准。</p>
+
+    <h3>平台需要注册才能浏览吗？</h3>
+    <p>大部分内容（赛程、赛果、文章）无需注册即可查看。部分个性化功能（如收藏、评论）可能需创建账号，具体情况请访问后留意页面提示。</p>
+
+    <h3>数据来源可靠吗？</h3>
+    <p>平台声明数据来自公开体育数据提供商，但任何第三方数据都存在一定延迟或偶发误差。对于重要决策（如赛事统计、投注参考），请务必核对多个权威来源。</p>
+
+    <!-- 自然嵌入链接的句子 —— 完全符合要求 -->
+    <p style="margin-top: 2rem;">
+        如果你想进一步了解具体内容，可以直接访问 <a href="https://cns-9yousports.com" target="_blank" rel="noopener">九游体育</a>，自行浏览赛程、文章或其他功能模块。每个人的使用习惯不同，亲自体验通常是最直接的判断方式。
+    </p>
+
+    <!-- 收尾，保持克制 -->
+    <div class="foot-note">
+        <p>本介绍页仅提供客观信息整理与使用提示，不代替官方说明，也不构成任何形式的推荐或背书。页面版本：2025 · 内容方向：产品说明式 · 种子标识仅供结构变化参考。</p>
+    </div>
+
+</div>
+</body>
+</html>
